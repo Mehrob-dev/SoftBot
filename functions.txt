@@ -1,0 +1,39 @@
+* Student side *
+
+Course catalog (price/duration/level)
+
+Enrollment request (pick course → confirm)
+
+“My courses” + progress status
+
+Schedule reminders (lesson tomorrow / today)
+
+Homework list + submit file/text
+
+Certificates: request / download / verify
+
+FAQ + support chat to admin
+
+Language switch (TJ/RU/EN)
+
+Referral code + bonus (if you want growth)
+
+----------------------------------------------------
+
+* Admin side *
+
+Add/edit courses
+
+View students list + search by tg_id/username
+
+Approve enrollment requests
+
+Broadcast message to:
+
+all students
+
+students of a specific course
+
+Export list of students per course (CSV)
+
+Simple stats: students per course, new students this week

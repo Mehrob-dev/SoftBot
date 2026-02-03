@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, Column, Integer, String, DateTime, ForeignKey, UniqueConstraint, BigInteger
+from sqlalchemy import create_engine, Column, Integer, String, DateTime, ForeignKey, UniqueConstraint, BigInteger, Boolean
 from sqlalchemy.orm import declarative_base, relationship
 from datetime import datetime
 
@@ -16,6 +16,10 @@ class Users(Base):
     username = Column(String)
     registered_on = Column(DateTime, default=datetime.now)
     language = Column(String(4), default='en')
+    is_admin = Column(Boolean, default=False)
+    admin_in_conversation = Column(Boolean, default=False)
+    connected_user_id = Column(BigInteger, nullable=True)
+    connected_admin_id = Column(BigInteger, nullable=True)
 
     student = relationship("Student", back_populates="user", uselist=False, cascade="all, delete-orphan")
 
